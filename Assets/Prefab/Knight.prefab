@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 3329265545500742611}
   - component: {fileID: 2914565131035928953}
   - component: {fileID: 119118903}
-  - component: {fileID: 1868199895621658198}
   - component: {fileID: 458214399}
   - component: {fileID: 458214403}
   - component: {fileID: 4691358050779412649}
   - component: {fileID: 458214404}
+  - component: {fileID: 184368796}
   m_Layer: 6
   m_Name: Knight
   m_TagString: Untagged
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 00ea3f2686d8e564e94bd2bf0da3be4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -112,25 +112,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &1868199895621658198
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490498017295253403}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6465da25ddf05bb4b9fd8711b54061d4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!70 &458214399
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -161,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 458214404}
   runSpeed: 40
-  animator: {fileID: 1868199895621658198}
+  animator: {fileID: 184368796}
 --- !u!114 &4691358050779412649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a17b22581d7cc4c9e416d59e7276d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1868199895621658198}
+  animator: {fileID: 184368796}
   attackPoint: {fileID: 2949052453320173443}
   attackRange: 0.72
   enemyLayers:
@@ -220,6 +201,25 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &184368796
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490498017295253403}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6465da25ddf05bb4b9fd8711b54061d4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1703203878718106410
 GameObject:
   m_ObjectHideFlags: 0
