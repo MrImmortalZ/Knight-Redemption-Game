@@ -14,12 +14,15 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
+    private Rigidbody2D body;
 
     private void Awake()
     {
         currentHealth = startingHealth;
         animator = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+        body = GetComponent<Rigidbody2D>();
+
         
     }
 
@@ -45,6 +48,8 @@ public class PlayerHealth : MonoBehaviour
             {
                 animator.SetTrigger("Die");
                 GetComponent<PlayerMovement>().enabled = false;
+                body.constraints = RigidbodyConstraints2D.FreezePositionX;
+                //GetComponent<CapsuleCollider2D>().enabled = false;
                 dead = true;
 
             }

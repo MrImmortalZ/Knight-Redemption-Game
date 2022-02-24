@@ -235,10 +235,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike
       objectReference: {fileID: 0}
-    - target: {fileID: 2475907680363485367, guid: 22ce4c1b0abb9e74c82f944ccbabd098, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22ce4c1b0abb9e74c82f944ccbabd098, type: 3}
 --- !u!4 &113953330 stripped
@@ -1062,45 +1058,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 119118903, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 119118903, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
-      propertyPath: m_GravityScale
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1212870979, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1212870979, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
-      propertyPath: startingHealth
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1212870979, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
-      propertyPath: iFramesDuration
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1212870979, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
-      propertyPath: numberOfFlashes
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 490498017295253403, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
       propertyPath: m_Name
       value: Knight
-      objectReference: {fileID: 0}
-    - target: {fileID: 490498017295253403, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2914565131035928953, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2914565131035928953, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1633595259
       objectReference: {fileID: 0}
     - target: {fileID: 3329265545500742611, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
       propertyPath: m_RootOrder
@@ -1608,14 +1568,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 467823665146899436, guid: 4f1214edd8b3f46418fe230b93bd93d9, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 467823665146899436, guid: 4f1214edd8b3f46418fe230b93bd93d9, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 747504922188127572, guid: 4f1214edd8b3f46418fe230b93bd93d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1704,10 +1656,6 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1212870979}
-    - target: {fileID: 7305586714754905017, guid: 4f1214edd8b3f46418fe230b93bd93d9, type: 3}
-      propertyPath: fill
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8237152557720785419, guid: 4f1214edd8b3f46418fe230b93bd93d9, type: 3}
       propertyPath: m_Name
       value: Player Health UI
