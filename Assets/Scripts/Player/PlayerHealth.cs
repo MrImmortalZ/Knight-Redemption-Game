@@ -6,9 +6,10 @@ public class PlayerHealth : MonoBehaviour
 {
     [Header("PlayerHealth")]
     [SerializeField] private float startingHealth;
-    public float currentHealth {get; private set;}
+    public float currentHealth; //{get; private set;}
     private Animator animator;
     private bool dead;
+    public GameOverScreen gameover;
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -49,7 +50,7 @@ public class PlayerHealth : MonoBehaviour
                 animator.SetTrigger("Die");
                 GetComponent<PlayerMovement>().enabled = false;
                 body.constraints = RigidbodyConstraints2D.FreezePositionX;
-                //GetComponent<CapsuleCollider2D>().enabled = false;
+                gameover.Setup();
                 dead = true;
 
             }
