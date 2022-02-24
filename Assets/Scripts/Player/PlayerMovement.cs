@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;
     bool jump = false;
     public Animator animator;
+    public Vector3 respawnPoint;
 
     void Update()
     {
@@ -32,4 +33,6 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove*Time.fixedDeltaTime,false, jump);
         jump = false;
     }
+
+    
 }
