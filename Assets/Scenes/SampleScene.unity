@@ -3158,11 +3158,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 119118903, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 184368796, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6465da25ddf05bb4b9fd8711b54061d4, type: 2}
     - target: {fileID: 458214404, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
       propertyPath: m_JumpForce
       value: 1400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212870979, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
+      propertyPath: startingHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 490498017295253403, guid: 73ed22240d36c534abc55eac6cd55d3f, type: 3}
       propertyPath: m_Name
